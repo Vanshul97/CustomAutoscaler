@@ -5,7 +5,7 @@ from autoscaler import AutoScaler
 class TestAutoScaler(unittest.TestCase):
     def setUp(self):
         self.app_url = "http://example.com"
-        self.target_cpu = 0.80
+        self.target_cpu = 0.80 #target cpu
         self.max_replicas = 20
         self.min_replicas = 1
         self.scale_up_threshold = 0.85
