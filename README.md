@@ -9,18 +9,6 @@ Import the AutoScaler class from autoscaler.py.
 Instantiate an AutoScaler object with the necessary parameters.
 Call the auto_scale() method to start auto-scaling.
 
-
-import logging
-from autoscaler import AutoScaler
-
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    app_url = "http://example.com"  # Replace with the actual URL of the application
-    target_cpu = 0.80  # Specify the target CPU utilization (80%)
-    auto_scaler = AutoScaler(app_url, target_cpu=target_cpu)
-    auto_scaler.auto_scale()
-
-    auto_scaler.auto_scale()
 **Parameters**
 app_url: The URL of the target application.
 target_cpu: The target CPU utilization (default 0.80).
